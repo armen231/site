@@ -1632,6 +1632,7 @@ h6 {
   }
   .body .contacts .container .contacts__part1 .contacts__contact .contacts__contact-part2 {
     width: 100%;
+    border-radius: 20px;
   }
   .body .contacts .container .contacts__part1 .contacts__contact .contacts__contact-part2 .contacts__contact-p1 {
     display: none;

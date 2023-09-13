@@ -286,7 +286,10 @@ function click_options__numbers_page(event) {
 
 //////////////////////////////////////////////////////
 // обработчик перехода на страницу индивидуальное строительство
+
+
 document.querySelector(".customer__part1 .customer__learn-more .customer__arrow1").addEventListener("click", click_customer_lern_more);
+document.querySelector(".container .customer__learn-more .customer__arrow2").addEventListener("click", click_customer_lern_more);
 function click_customer_lern_more () {
     window.location.href = "https://armen231.github.io/site/projects/project_3/Public/individual_construction.html";
 }
