@@ -26,6 +26,16 @@ let isTouch = 0; // переменная для определения типа 
 
 load();
 function load() {
+    if (localStorage.getItem("theme") == null) {
+        localStorage.setItem("theme", "light");
+    } else {
+        if (localStorage.getItem("theme") == "dark") {
+            document.querySelector("body").classList.add("body-dark");
+            document.querySelector(".header_header .theme .header_theme-dark").style.opacity = 0;
+            setTimeout(() => (document.querySelector(".header_header .theme .header_theme-light").style.opacity = 1), 300);
+        }
+    }
+
     if (sessionStorage.getItem("url") != null) {
         if (sessionStorage.getItem("url") != window.location.href) {
             sessionStorage.setItem("scroll", 0);
@@ -64,5 +74,22 @@ document.querySelector("body .main_container .section1 .container").addEventList
 function click_container(event) {
     if (event.srcElement.classList.length == 3 && event.srcElement.classList[0] == "open_site") {
         window.location.href = data["d" + event.srcElement.classList[1]].url;
+    }
+}
+
+
+// клик по теме сайта 
+document.querySelector(".header .container .header_header .theme").addEventListener("click", click_theme);
+function click_theme() {
+    if (localStorage.getItem("theme") == "light") {
+        document.querySelector("body").classList.add("body-dark");
+         document.querySelector(".header_header .theme .header_theme-dark").style.opacity = 0
+        setTimeout(() => {document.querySelector(".header_header .theme .header_theme-light").style.opacity = 1; }, 300);
+        localStorage.setItem("theme", "dark");
+    } else if (localStorage.getItem("theme") == "dark") {
+        document.querySelector("body").classList.remove("body-dark");
+        document.querySelector(".header_header .theme .header_theme-light").style.opacity = 0
+        setTimeout(() => {document.querySelector(".header_header .theme .header_theme-dark").style.opacity = 1; }, 300);
+        localStorage.setItem("theme", "light");
     }
 }
