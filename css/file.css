@@ -114,32 +114,39 @@ h1, h2, h3, h4, h5, h6 {
 .body .header .container .header_header .header_logo {
   background: white;
   border-radius: 50%;
-  padding: 3px;
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 .body .header .container .header_header .header_logo .header_img-logo {
-  width: 18px;
-  padding: 2px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .body .header .container .header_header .theme {
   cursor: default;
   background: white;
   border-radius: 50%;
-  padding: 3px;
   position: relative;
   width: 24px;
+  height: 24px;
 }
 .body .header .container .header_header .theme .header_theme-light {
   position: absolute;
-  top: 2px;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   font-size: 18px;
   transition: all 0.3s;
 }
 .body .header .container .header_header .theme .header_theme-dark {
   position: absolute;
-  top: 2px;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
   transition: all 0.3s;
   font-size: 18px;
@@ -227,11 +234,14 @@ h1, h2, h3, h4, h5, h6 {
 .body-dark .header .container .header_header .header_logo {
   background: white;
   border-radius: 50%;
-  padding: 3px;
+  width: 24px;
+  height: 24px;
 }
 .body-dark .header .container .header_header .header_logo .header_img-logo {
-  width: 18px;
-  padding: 2px;
+  width: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .body-dark .header .container .header_header .theme {
   cursor: default;
@@ -240,19 +250,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3px;
   position: relative;
   width: 24px;
+  height: 24px;
 }
 .body-dark .header .container .header_header .theme .header_theme-light {
   position: absolute;
-  top: 2px;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   font-size: 18px;
   transition: all 0.3s;
 }
 .body-dark .header .container .header_header .theme .header_theme-dark {
   position: absolute;
-  top: 2px;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
   transition: all 0.3s;
   font-size: 18px;
@@ -315,20 +328,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 400px) {
-  body .main_container .section1 .container {
+  .body .main_container .section1 .container {
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
 }
 @media (min-width: 1600px) {
-  body .main_container .section1 .container {
+  .body .main_container .section1 .container {
     column-gap: 60px;
   }
-  body .main_container .section1 .container .project {
+  .body .main_container .section1 .container .project {
     border-radius: 30px;
     padding: 30px;
   }
-  body .main_container .section1 .container .project img {
+  .body .main_container .section1 .container .project img {
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 122, 204, 0.3);

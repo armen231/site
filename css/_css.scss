@@ -25,11 +25,16 @@
                 .header_logo {
                     background: white;
                     border-radius: 50%;
-                    padding: 3px;
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
 
                     .header_img-logo {
-                        width: 18px;
-                        padding: 2px;
+                        width: 15px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
                 }
 
@@ -37,14 +42,15 @@
                     cursor: default;
                     background: white;
                     border-radius: 50%;
-                    padding: 3px;
                     position: relative;
                     width: 24px;
+                    height: 24px;
 
                     .header_theme-light {
                         position: absolute;
-                        top: 2px;
-                        left: 3px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         opacity: 0;
                         font-size: 18px;
                         transition: all 0.3s;
@@ -52,8 +58,9 @@
 
                     .header_theme-dark {
                         position: absolute;
-                        top: 2px;
-                        left: 3px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         opacity: 1;
                         transition: all 0.3s;
                         font-size: 18px;
@@ -160,11 +167,14 @@
                 .header_logo {
                     background: white;
                     border-radius: 50%;
-                    padding: 3px;
+                    width: 24px;
+                    height: 24px;
 
                     .header_img-logo {
-                        width: 18px;
-                        padding: 2px;
+                        width: 15px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
                 }
 
@@ -175,11 +185,13 @@
                     padding: 3px;
                     position: relative;
                     width: 24px;
+                    height: 24px;
 
                     .header_theme-light {
                         position: absolute;
-                        top: 2px;
-                        left: 3px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         opacity: 0;
                         font-size: 18px;
                         transition: all 0.3s;
@@ -187,8 +199,9 @@
 
                     .header_theme-dark {
                         position: absolute;
-                        top: 2px;
-                        left: 3px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         opacity: 1;
                         transition: all 0.3s;
                         font-size: 18px;

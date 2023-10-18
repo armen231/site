@@ -1,7 +1,7 @@
 @use "mixin" as m;
 
 @media (max-width: 400px) {
-    body .main_container .section1 .container {
+    .body .main_container .section1 .container {
         grid-template-columns: 1fr;
         row-gap: 30px;
     }
@@ -10,7 +10,7 @@
 @media (min-width: 1600px) {
 
 
-    body {
+    .body {
 
         .main_container {
 
